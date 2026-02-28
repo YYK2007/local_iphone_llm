@@ -16,3 +16,7 @@ DerivedData/
 # macOS / editor noise
 .idea/
 .vscode/
+
+# Local Python virtual environments
+.venv/
+.venv*/

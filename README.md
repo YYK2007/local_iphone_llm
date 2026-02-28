@@ -64,6 +64,7 @@ Suggested first run:
 - `scripts/download_qwen_model.sh`: optional CLI GGUF downloader
 - `docs/POSTING_GUIDE.md`: benchmark/reporting template
 - `docs/GITHUB_PUBLISH.md`: steps to publish this repo to GitHub
+- `docs/APP_STORE_SUBMISSION.md`: App Store submission checklist for this app
 
 ## License and attributions
 - This repo: MIT (see `LICENSE`)
