@@ -1,0 +1,18 @@
+.DS_Store
+
+# Local dependency checkout and compiled framework
+.deps/
+build-apple/
+
+# Downloaded models at repository root
+/models/
+qwen_iphone_app/llama.swiftui/Resources/models/*.gguf
+
+# Xcode and Apple tooling
+DerivedData/
+*.xcuserstate
+**/xcuserdata/
+
+# macOS / editor noise
+.idea/
+.vscode/

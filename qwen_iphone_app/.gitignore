@@ -1,0 +1,6 @@
+# Xcode user-specific state
+**/xcuserdata/
+**/*.xcuserstate
+
+# Local Finder metadata
+.DS_Store
