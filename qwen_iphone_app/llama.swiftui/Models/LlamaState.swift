@@ -1095,6 +1095,54 @@ class LlamaState: ObservableObject {
 
     private let defaultModels: [Model] = [
         Model(
+            name: "Qwen3.5-0.8B (Q4_0, 0.47 GiB)",
+            url: "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/main/Qwen3.5-0.8B-Q4_0.gguf?download=true",
+            filename: "Qwen3.5-0.8B-Q4_0.gguf",
+            status: "download"
+        ),
+        Model(
+            name: "Qwen3.5-0.8B (Q4_K_M, 0.50 GiB)",
+            url: "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/main/Qwen3.5-0.8B-Q4_K_M.gguf?download=true",
+            filename: "Qwen3.5-0.8B-Q4_K_M.gguf",
+            status: "download"
+        ),
+        Model(
+            name: "Qwen3.5-2B (Q4_0, 1.13 GiB)",
+            url: "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/main/Qwen3.5-2B-Q4_0.gguf?download=true",
+            filename: "Qwen3.5-2B-Q4_0.gguf",
+            status: "download"
+        ),
+        Model(
+            name: "Qwen3.5-2B (Q4_K_M, 1.19 GiB)",
+            url: "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/main/Qwen3.5-2B-Q4_K_M.gguf?download=true",
+            filename: "Qwen3.5-2B-Q4_K_M.gguf",
+            status: "download"
+        ),
+        Model(
+            name: "Qwen3.5-4B (Q4_0, 2.41 GiB)",
+            url: "https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/main/Qwen3.5-4B-Q4_0.gguf?download=true",
+            filename: "Qwen3.5-4B-Q4_0.gguf",
+            status: "download"
+        ),
+        Model(
+            name: "Qwen3.5-4B (Q4_K_M, 2.55 GiB)",
+            url: "https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/main/Qwen3.5-4B-Q4_K_M.gguf?download=true",
+            filename: "Qwen3.5-4B-Q4_K_M.gguf",
+            status: "download"
+        ),
+        Model(
+            name: "Qwen3.5-9B (Q4_0, 5.01 GiB)",
+            url: "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/resolve/main/Qwen3.5-9B-Q4_0.gguf?download=true",
+            filename: "Qwen3.5-9B-Q4_0.gguf",
+            status: "download"
+        ),
+        Model(
+            name: "Qwen3.5-9B (Q4_K_M, 5.29 GiB)",
+            url: "https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/resolve/main/Qwen3.5-9B-Q4_K_M.gguf?download=true",
+            filename: "Qwen3.5-9B-Q4_K_M.gguf",
+            status: "download"
+        ),
+        Model(
             name: "Qwen3-1.7B (Q4_0, 1.11 GiB)",
             url: "https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF/resolve/main/Qwen3-1.7B-Q4_0.gguf?download=true",
             filename: "Qwen3-1.7B-Q4_0.gguf",
@@ -1215,7 +1263,7 @@ class LlamaState: ObservableObject {
                     self.isModelLoaded = false
                     self.currentModelName = "No model loaded"
                     self.messageLog += "Model load failed: \(error.localizedDescription)\n"
-                    self.messageLog += "If this is a Qwen3 model, confirm your llama.xcframework is recent.\n"
+                    self.messageLog += "If this is a Qwen3/Qwen3.5 model, rebuild llama.xcframework from latest llama.cpp.\n"
                 }
             }
         }

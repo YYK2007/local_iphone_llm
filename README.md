@@ -12,12 +12,13 @@ Run Qwen GGUF models locally on iPhone using `llama.cpp` + Metal, with a polishe
 - Reliability guards for empty-output turns (multi-pass + deterministic retry)
 
 ## Reality check on Qwen3.5
-This app is optimized for local Qwen3 GGUF models that fit phone memory budgets.
-Very large Qwen3.5 classes are generally not practical for full local iPhone inference today.
+This app now includes downloadable Qwen3.5 GGUF options in-app.
+On iPhone, Qwen3.5 0.8B/2B are practical starts, 4B is heavier, and 9B+ can be memory-limited.
 
 ## Recommended local models
-- `Qwen3-1.7B-Q4_K_M.gguf` (best starting point)
-- `Qwen3-4B-Q4_0.gguf` (higher quality, heavier)
+- `Qwen3.5-0.8B-Q4_K_M.gguf` (fastest Qwen3.5 option)
+- `Qwen3.5-2B-Q4_K_M.gguf` (quality/speed balance)
+- `Qwen3-1.7B-Q4_K_M.gguf` (stable fallback)
 
 ## Prerequisites
 - macOS with Xcode + Command Line Tools

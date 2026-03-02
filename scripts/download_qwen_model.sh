@@ -8,6 +8,38 @@ MODEL_KEY="${1:-qwen3-1.7b-q4km}"
 mkdir -p "$OUT_DIR"
 
 case "$MODEL_KEY" in
+  qwen3.5-0.8b-q4_0)
+    FILENAME="Qwen3.5-0.8B-Q4_0.gguf"
+    URL="https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/main/Qwen3.5-0.8B-Q4_0.gguf?download=true"
+    ;;
+  qwen3.5-0.8b-q4km)
+    FILENAME="Qwen3.5-0.8B-Q4_K_M.gguf"
+    URL="https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/main/Qwen3.5-0.8B-Q4_K_M.gguf?download=true"
+    ;;
+  qwen3.5-2b-q4_0)
+    FILENAME="Qwen3.5-2B-Q4_0.gguf"
+    URL="https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/main/Qwen3.5-2B-Q4_0.gguf?download=true"
+    ;;
+  qwen3.5-2b-q4km)
+    FILENAME="Qwen3.5-2B-Q4_K_M.gguf"
+    URL="https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/main/Qwen3.5-2B-Q4_K_M.gguf?download=true"
+    ;;
+  qwen3.5-4b-q4_0)
+    FILENAME="Qwen3.5-4B-Q4_0.gguf"
+    URL="https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/main/Qwen3.5-4B-Q4_0.gguf?download=true"
+    ;;
+  qwen3.5-4b-q4km)
+    FILENAME="Qwen3.5-4B-Q4_K_M.gguf"
+    URL="https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/main/Qwen3.5-4B-Q4_K_M.gguf?download=true"
+    ;;
+  qwen3.5-9b-q4_0)
+    FILENAME="Qwen3.5-9B-Q4_0.gguf"
+    URL="https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/resolve/main/Qwen3.5-9B-Q4_0.gguf?download=true"
+    ;;
+  qwen3.5-9b-q4km)
+    FILENAME="Qwen3.5-9B-Q4_K_M.gguf"
+    URL="https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/resolve/main/Qwen3.5-9B-Q4_K_M.gguf?download=true"
+    ;;
   qwen3-1.7b-q4_0)
     FILENAME="Qwen3-1.7B-Q4_0.gguf"
     URL="https://huggingface.co/ggml-org/Qwen3-1.7B-GGUF/resolve/main/Qwen3-1.7B-Q4_0.gguf?download=true"
@@ -27,6 +59,14 @@ case "$MODEL_KEY" in
   *)
     echo "Unknown model key: $MODEL_KEY"
     echo "Valid keys:"
+    echo "  qwen3.5-0.8b-q4_0"
+    echo "  qwen3.5-0.8b-q4km"
+    echo "  qwen3.5-2b-q4_0"
+    echo "  qwen3.5-2b-q4km"
+    echo "  qwen3.5-4b-q4_0"
+    echo "  qwen3.5-4b-q4km"
+    echo "  qwen3.5-9b-q4_0"
+    echo "  qwen3.5-9b-q4km"
     echo "  qwen3-1.7b-q4_0"
     echo "  qwen3-1.7b-q4km"
     echo "  qwen3-4b-q4_0"

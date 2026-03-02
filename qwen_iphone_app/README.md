@@ -32,5 +32,6 @@ The app expects:
 - `maxNewTokens = 512`
 
 ## Notes
-- If you use Qwen3 models, ensure your `llama.xcframework` is recent enough to support `qwen3` architecture.
-- For best responsiveness, start with `Qwen3-1.7B-Q4_K_M.gguf`.
+- If you use Qwen3/Qwen3.5 models, ensure your `llama.xcframework` is recent enough to support `qwen3` and `qwen35` architectures.
+- Qwen3.5 GGUF links in the in-app list currently use `unsloth/*-GGUF` repositories.
+- For best responsiveness, start with `Qwen3.5-0.8B-Q4_K_M.gguf` or `Qwen3.5-2B-Q4_K_M.gguf`.
